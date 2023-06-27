@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Jogo da Memória</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body" id="game">
+      <div class="header">
+        <h1>JOGO DA MEMÓRIA</h1>
+        <h3>Pontuação : <span class="" id="score">0</span></h3>
+      </div>
+      <section class="memory-game">
+        <div class="memory-card" data-id="1">
+          <img
+            class="front-face"
+            src="./cartões/TECNOLOGIA.png"
+            alt="tecnologia"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="1">
+          <img
+            class="front-face"
+            src="sinais/tecnologia.gif"
+            alt="tecnologia"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="2">
+          <img
+            class="front-face"
+            src="./cartões/ALGORITMO.png"
+            alt="Algoritmo"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="2">
+          <img
+            class="front-face"
+            src="./sinais/algoritmo.gif"
+            alt="Algoritmo"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="3">
+          <img class="front-face" src="./cartões/BACKUP.png" alt="Backup" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="3">
+          <img class="front-face" src="./sinais/backup.gif" alt="Backup" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="4">
+          <img
+            class="front-face"
+            src="./cartões/BLUETOOTH.png"
+            alt="Bluetooth"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="4">
+          <img
+            class="front-face"
+            src="./sinais/bluetooth.gif"
+            alt="Bluetooth"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="5">
+          <img
+            class="front-face"
+            src="./cartões/COMPUTADOR.png"
+            alt="Computador"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="5">
+          <img
+            class="front-face"
+            src="./sinais/computador.gif"
+            alt="Computador"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="6">
+          <img
+            class="front-face"
+            src="./cartões/INTELIGENCIA ARTIFICIAL.png"
+            alt="Inteligencia Artificial"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="6">
+          <img
+            class="front-face"
+            src="./sinais/ia.gif"
+            alt="Inteligencia Artificial"
+          />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="7">
+          <img class="front-face" src="./cartões/TECLADO.png" alt="Teclado" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="7">
+          <img class="front-face" src="./sinais/teclado.gif" alt="Teclado" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="8">
+          <img class="front-face" src="./cartões/WHATSAPP.png" alt="WhatsApp" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="8">
+          <img class="front-face" src="./sinais/whatsapp.gif" alt="WhatsApp" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+
+        <div class="memory-card" data-id="9">
+          <img class="front-face" src="./cartões/WIFI.png" alt="Wifi" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+        <div class="memory-card" data-id="9">
+          <img class="front-face" src="./sinais/wifi.gif" alt="Wifi" />
+          <img class="back-face" src="libras.png" alt="placeholder" />
+        </div>
+      </section>
+    </div>
+    <canvas id="birthday"></canvas>
+    <div id="parabens" class="parabens hide">
+      <h2>Parabéns!!</h2>
+      <input type="button" value="Jogar Novamente" id="play" class="playBtn" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
