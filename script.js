@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsMatched.push(secondCard)
         score.textContent = cardsMatched.length / 2
 
-        if (cardsMatched.length === 18) { fireWorks() }
+        if (cardsMatched.length === 18) { setTimeout(fireWorks, 3000) }
         resetBoard()
     }
 
@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
             firstCard.classList.remove('wrong')
             secondCard.classList.remove('wrong')
             resetBoard()
-        }, 3000)
+        }, 2500)
+
     }
 
     function resetBoard() {
