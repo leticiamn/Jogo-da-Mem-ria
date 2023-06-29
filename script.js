@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.memory-card');
+    const playAgain = document.querySelectorAll('.playAgainBtn');
     const play = document.querySelectorAll('.playBtn');
+    const learn = document.querySelectorAll('.learnBtn');
+
+    let game = document.getElementById("game");
+    let menu = document.getElementById("menu");
+    let learnBoard = document.getElementById("learn");
 
     let hasFlippedCard = false
     let lockBoard = false
@@ -85,10 +91,28 @@ document.addEventListener('DOMContentLoaded', () => {
     })()
 
     cards.forEach(card => card.addEventListener('click', flipCard))
-    play.forEach(card => card.addEventListener('click', refresh))
+    playAgain.forEach(card => card.addEventListener('click', fplayAgain))
+    play.forEach(card => card.addEventListener('click', fplay))
+    learn.forEach(card => card.addEventListener('click', flearn))
+
+    function fplayAgain() {
+        location.reload();
+        game.classList.remove('hide');
+        menu.classList.add('hide');
+    }
+
+    function fplay() {
+        game.classList.remove('hide');
+        menu.classList.add('hide');
+    }
+
+    function flearn() {
+        learnBoard.classList.remove('hide');
+        menu.classList.add('hide');
+    }
 })
 
-function refresh() { location.reload() }
+
 
 function fireWorks() {
     // helper functions
@@ -109,6 +133,7 @@ function fireWorks() {
         resize() {
             parabens.classList.remove('hide');
             game.classList.add('hide');
+            canvas.classList.remove('hide');
             this.width = canvas.width = window.innerWidth;
             let center = (this.width / 2) | 0;
             this.spawnA = (center - center / 4) | 0;
@@ -236,7 +261,6 @@ function fireWorks() {
 
     let canvas = document.getElementById("birthday");
     let parabens = document.getElementById("parabens");
-    let game = document.getElementById("game");
     let ctx = canvas.getContext("2d");
 
     let then = timestamp();
