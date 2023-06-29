@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const playAgain = document.querySelectorAll('.playAgainBtn');
     const play = document.querySelectorAll('.playBtn');
     const learn = document.querySelectorAll('.learnBtn');
+    const header = document.querySelectorAll('.header');
 
     let game = document.getElementById("game");
     let menu = document.getElementById("menu");
@@ -94,6 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
     playAgain.forEach(card => card.addEventListener('click', fplayAgain))
     play.forEach(card => card.addEventListener('click', fplay))
     learn.forEach(card => card.addEventListener('click', flearn))
+    header.forEach(card => card.addEventListener('click', voltar))
+
+    function voltar() {
+        location.reload();
+    }
 
     function fplayAgain() {
         location.reload();
